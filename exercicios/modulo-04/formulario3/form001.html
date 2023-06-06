@@ -10,28 +10,33 @@
 <body>
     <form action="resultado.php" method="get" autocomplete="on">
         <h1>Formulário</h1>
-        <div>
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" placeholder="Digite seu nome">
-        </div>
-        <!-- E-mail -->
-        <div>
-        <label for="iemail">E-mail</label>
-        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Digite o e-mail" required>
-        </div>
-        <div>
-            <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel" autocomplete="tel"  required placeholder="DDD e o número">
-        </div>
-        <!-- Botões -->
-        <div>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-        </div>
+        <fieldset>
+            <legend> Dados pessoais</legend>
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" placeholder="Digite seu nome">
+            </div>
+            <!-- E-mail -->
+            <div>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Digite o e-mail" required>
+            </div>
+            <div>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel"  required placeholder="DDD e o número">
+            </div>
+            <!-- Botões -->
+            <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
 
     </form>
 </body>
 </html>
 
 <!-- Padrão pra telefone: pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required> -->
+<!-- Fieldset agrupa todos os dados que escolheu e depois dele pode usar legend que aplica uma legenda desse fieldset -->
+
 
