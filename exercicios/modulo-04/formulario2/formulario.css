@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+form{
+    background-color: rgb(132, 143, 113);
+    padding-bottom: 25px;
+    display: inline-block;
+}
+#nome{
+    margin-bottom: 20px;
+}
