@@ -10,12 +10,15 @@
 <body>
    
     <form action="resultado.php" method="get" autocomplete="on">
-        <h1>Teste de Formulário</h1>
+        <h1>Formulário</h1>
         <div id="nome">
             <label for="inome">Nome</label>
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
         </div>
-        
+        <div>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </div>
         <div id="media">
             <label for="imedia">Média</label>
             <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
