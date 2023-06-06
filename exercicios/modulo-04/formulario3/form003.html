@@ -9,9 +9,12 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get">
+        
+        <!-- Campo Estado -->
         <p>
             <label for="iestado">Estado</label>
             <select name="estado" id="">iestado
+                <option value="" selected> ---Escolha---</option>
                 <optgroup label="Região Sudeste">
                     <option value="BA">Bahia</option>
                     <option value="SP">São Paulo</option>
@@ -26,9 +29,33 @@
             </select>
         </p>
         
+        <!-- Campo profissão -->
+        <p>
+            <label for="iprofissao">Profissão</label>
+            <input type="text" name="profissao" id="iprofissao" list="lstprof"> 
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Professor</option>
+                <option>Caixa</option>
+                <option>Desenvolvedor</option>
+                <option>Contador</option>
+
+
+            </datalist>
+        </p>
         
-        
-        
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite a sua mensagem aqui..."></textarea>
+        </p>
+
+
+
+
+
+
+
+        <!-- Botões -->
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
@@ -37,6 +64,14 @@
 </body>
 </html>
 
-<!-- Select caixa com opções e o option coloca as opções dentro
+<!-- selected é a opção que aparece padrão  -->
+<!-- Select caixa com opções que não dar pra digitar e o option coloca as opções dentro
 já o optgroup separa por sessões -->
+<!-- datalist - lista de opções e e pode digitar além das pré estabelecidas -->
+<!-- textarea - cria campo para o usuário digitar e enviar algo -->
+
+
+
+
+
 <!-- https://www.youtube.com/watch?v=PFGmSEj2wIo&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=27 -->
