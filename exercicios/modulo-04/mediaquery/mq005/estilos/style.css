@@ -67,3 +67,11 @@ article >p{
     margin-bottom: 10px;
     text-indent: 10px;
 }
+
+footer{
+    background-color: rgba(44, 44, 44, 0.548);
+    color: white;
+    text-align: center;
+    margin-top: 50vh;
+    padding: 5px;
+}
