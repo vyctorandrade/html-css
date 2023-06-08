@@ -13,6 +13,31 @@ Grandes telas: acima de 1200px
 
 /* Impressão */
 @media print{
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    img#phone{display:none ;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after{
+        content: 'Essa impressão vai ser feita agora';
+        text-decoration: overline;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+   
 
 }
 /* Tablet */
@@ -39,5 +64,15 @@ Grandes telas: acima de 1200px
 }
 /* Grandes Telas */
 @media screen and (min-width:1200px) {
-    
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    img#phone{display:none ;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
 }
